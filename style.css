@@ -1,0 +1,199 @@
+/* ======= RESET ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======= ESTILO GLOBAL ======= */
+body {
+  background-color: #000;
+  color: #ccc;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* ======= CONTENEDOR PRINCIPAL ======= */
+#container {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+/* ======= ENCABEZADO CON IMAGEN ======= */
+#intro {
+  background: url("/header.jpg") no-repeat center top;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  border-bottom: 3px solid #222;
+}
+
+/* ======= TÍTULOS DEL ENCABEZADO ======= */
+#pageHeader {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  text-align: right;
+  width: auto;
+}
+
+#pageHeader h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+#pageHeader h2 {
+  color: #ddd;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+/* ======= COLUMNAS ======= */
+#supportingText {
+  width: 65%;
+  float: left;
+  padding: 20px 30px;
+}
+
+#linkList {
+  width: 30%;
+  float: right;
+  padding: 20px 20px 0 0;
+}
+
+/* ======= TITULOS SECCIONES IZQUIERDA ======= */
+#supportingText h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+/* ======= PÁRRAFOS ======= */
+#supportingText p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* ======= PIE DE PÁGINA ======= */
+#footer {
+  clear: both;
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #222;
+  margin-top: 30px;
+}
+
+#footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+/* ======= MENÚ LATERAL ======= */
+#linkList2 {
+  color: #fff;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/* Quita márgenes y padding de las listas */
+#lselect ul,
+#larchives ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======= ESTILO GENERAL DE ITEMS ======= */
+#lselect li,
+#larchives li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  position: relative;
+  padding-left: 15px; /* espacio para el punto */
+}
+
+/* ======= PUNTOS (•) MANUALES ======= */
+#lselect li::before,
+#larchives li::before {
+  content: "•";
+  color: #ccc;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 14px;
+}
+
+/* ======= LÍNEAS PUNTEADAS ======= */
+#lselect li::after,
+#larchives li::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 0;
+  bottom: 6px;
+  border-bottom: 1px dotted #666;
+  z-index: 0;
+}
+
+/* ======= ENLACES ======= */
+#lselect a,
+#larchives a {
+  position: relative;
+  z-index: 1;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+#lselect a:hover,
+#larchives a:hover {
+  color: #ccc;
+}
+
+/* ======= TÍTULOS DE SECCIÓN ======= */
+#larchives h3 {
+  color: #aaa;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* ======= RESPONSIVE ======= */
+@media screen and (max-width: 900px) {
+  #container {
+    width: 95%;
+  }
+
+  #supportingText,
+  #linkList {
+    width: 100%;
+    float: none;
+    padding: 20px;
+  }
+
+  #intro {
+    height: 200px;
+  }
+
+  #pageHeader h1 {
+    font-size: 28px;
+  }
+}
+
